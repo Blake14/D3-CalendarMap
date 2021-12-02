@@ -1,6 +1,6 @@
 var width = 900,
-  height = 105,
-  cellSize = 12; // cell size
+  height = 115,
+  cellSize = 14; // cell size
 week_days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
@@ -18,7 +18,7 @@ var svg = d3.select(".calender-map").selectAll("svg")
   .enter().append("svg")
   .attr("width", '100%')
   .attr("data-height", '0.5678')
-  .attr("viewBox", '0 0 900 105')
+  .attr("viewBox", '0 0 850 125')
   .attr("class", "RdYlGn")
   .append("g")
   .attr("transform", "translate(" + ((width - cellSize * 53) / 2) + "," + (height - cellSize * 7 - 1) + ")");
